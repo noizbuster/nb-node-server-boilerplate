@@ -1,0 +1,14 @@
+database:
+  mongodb:
+    hostname: localhost:27017
+    database: oonerbonjom-development
+    username: "localuser"
+    password: "localpass"
+
+authentication:
+  jwt_secret: not_secure_not_secure_not_secure
+
+query:
+  page_size: 1000
+
+port: 33301

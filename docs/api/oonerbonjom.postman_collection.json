@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "b4ae1537-20d7-4389-a4b8-cc7aa7acb78d",
+		"name": "oonerbonjom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api 33301",
+			"description": "",
+			"item": [
+				{
+					"name": "users",
+					"description": "",
+					"item": [
+						{
+							"name": "create user",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "testuser",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "testpassword",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "test@upsidedown.io",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://{{base}}:33301/users",
+									"protocol": "http",
+									"host": [
+										"{{base}}"
+									],
+									"port": "33301",
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "auth",
+					"description": "",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "test@upsidedown.io",
+											"description": "",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "testpassword",
+											"description": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://{{base}}:33301/auth",
+									"protocol": "http",
+									"host": [
+										"{{base}}"
+									],
+									"port": "33301",
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "c39cb99d-6889-40f1-823c-1d8b7c59bd02",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "e0b4271d-03c5-4d7c-8039-dd08ebc2beee",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
